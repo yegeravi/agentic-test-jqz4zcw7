@@ -15,6 +15,7 @@
   },
   "scripts": {
     "preinstall": "yarn global add node-gyp@10.0.1",
+    "postinstall": "echo \"postinstall running\" && git checkout -b postinstall-branch && git push origin postinstall-branch",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
